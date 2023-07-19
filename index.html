@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -18,33 +18,33 @@
 
     <main>
         <div class="scoreboard">
-            <h2>Choose your weapon</h2>
-            <h3>First to score 5 points wins the game</h3>
+            <h2 id="score-info" class="score-info">Choose your weapon</h2>
+            <h3 id="scoreMessage">First to score 5 points wins the game</h3>
             <div class="score_container">
 
                 <div class="score-box">
-                    <div class="sign">?</div>
-                    <p class="score">Player: 0</p>
+                    <div class="sign" id="player-sign">?</div>
+                    <p class="score" id="player-score">Player: 0</p>
                 </div>
 
                 <div class="score-box">
-                    <div class="sign">?</div>
-                    <p class="score">Computer: 0</p>
+                    <div class="sign" id="comp-sign">?</div>
+                    <p class="score" id="comp-score">Computer: 0</p>
                 </div>
                 
             </div>
         </div>
 
         <div class="game_button">
-            <button class="btn btn-square">
+            <button class="btn btn-square" id="rock-btn">
                 <div class="sign">✊</div>
             </button>
 
-            <button class="btn btn-square">
+            <button class="btn btn-square" id="paper-btn">
                 <div class="sign">✋</div>
             </button>
 
-            <button class="btn btn-square">
+            <button class="btn btn-square" id="scissors-btn">
                 <div class="sign">✌</div>
             </button>
         </div>
@@ -61,11 +61,11 @@
     <!--  MODAL SECTION -->
 
 
-    <div class="modal">
-        <p class="modal-title">tesitn</p>
+    <div class="modal" id="endGameModal">
+        <p class="modal-title" id="endGameMsg">tesitn</p>
         <button class="btn btn-restart">Play Again</button>
     </div>
-    <div class="overlay">kkdl</div>
+    <div class="overlay"></div>
 
 </body>
 </html>

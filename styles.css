@@ -66,6 +66,7 @@ main .scoreboard h2 {
 }
 
 main .scoreboard h3 {
+  margin-top: 40px;
   font-size: 20px;
 }
 
@@ -73,6 +74,7 @@ main .scoreboard h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
   /* max-width: 400px;
   margin: 0 auto;
   padding: 10px; */
@@ -139,7 +141,7 @@ footer {
 /* MODAL */
 
 .modal {
-  background-color: red;
+  background-color: var(--primary-dark);
   width: 300px;
   padding: 30px;
   border-radius: 10px;
@@ -148,7 +150,7 @@ footer {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: -1;
+  z-index: 1;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -176,4 +178,36 @@ footer {
   top: 0;
   left: 0;
   display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  main .scoreboard h2 {
+    font-size: 24px;
+  }
+
+  .game_button {
+    gap: 10px;
+  }
+
+  .btn-square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sign {
+    font-size: 50px;
+  }
+
+  .modal {
+    width: 95%;
+  }
 }
