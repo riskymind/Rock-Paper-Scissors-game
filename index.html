@@ -12,16 +12,20 @@
 </head>
 <body>
     
+    <!-- HEADER -->
     <header>
         <h1>ROCK PAPER SCISSORS</h1>
     </header>
 
+    <!-- Main SECTION -->
     <main>
         <div class="scoreboard">
+
             <h2 id="score-info" class="score-info">Choose your weapon</h2>
             <h3 id="scoreMessage">First to score 5 points wins the game</h3>
-            <div class="score_container">
 
+            <!-- Score info progress -->
+            <div class="score_container">
                 <div class="score-box">
                     <div class="sign" id="player-sign">?</div>
                     <p class="score" id="player-score">Player: 0</p>
@@ -35,6 +39,7 @@
             </div>
         </div>
 
+        <!-- Game options -->
         <div class="game_button">
             <button class="btn btn-square" id="rock-btn">
                 <div class="sign">✊</div>
@@ -50,7 +55,7 @@
         </div>
     </main>
 
-
+    <!-- Footer SECTION -->
     <footer>
         <p>
             copyright &copy; <script>document.write(new Date().getFullYear())</script> Kaylayshi
@@ -59,8 +64,6 @@
     </footer>
 
     <!--  MODAL SECTION -->
-
-
     <div class="modal" id="endGameModal">
         <p class="modal-title" id="endGameMsg">tesitn</p>
         <button class="btn btn-restart">Play Again</button>
